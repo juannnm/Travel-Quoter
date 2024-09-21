@@ -25,6 +25,7 @@ import { styled } from "@mui/material/styles";
 import { DatePicker } from "@mui/x-date-pickers/DatePicker";
 import { TimePicker } from "@mui/x-date-pickers/TimePicker";
 import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
+import { AdapterDateFns } from '@mui/x-date-pickers/AdapterDateFnsV3'
 import {
   CalendarToday as CalendarIcon,
   AccessTime as ClockIcon,
@@ -88,7 +89,7 @@ export default function TravelQuoteForm() {
   );
 
   return (
-    <LocalizationProvider>
+    <LocalizationProvider dateAdapter={AdapterDateFns}>
       <StyledCard>
         <CardHeader
           title="Travel Quote Calculator"
