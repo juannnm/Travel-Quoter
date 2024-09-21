@@ -1,6 +1,7 @@
 import React from "react";
 import { FormContainer } from "./FormContainer";
 import { LateralNavBar } from "./components/LateralNavBar";
+import TravelQuoteForm from "./components/travel-quote-form";
 
 export const App = () => {
   return (
@@ -10,7 +11,7 @@ export const App = () => {
           <LateralNavBar />
 
         <div className="col justify-content-center">
-          <FormContainer />
+          <TravelQuoteForm />
         </div>
       </div>
     </div>
